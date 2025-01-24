@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Add global background for testing */
+  html, body {
+    height: 100%;
+    background-color: #f9fafb; /* Tailwind gray-50 */
+  }
