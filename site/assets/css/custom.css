@@ -1,0 +1,49 @@
+/* Make the top navigation horizontal */
+.md-header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .md-header-nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+  }
+  
+  .md-header-nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Make the vertical sidebar scrollable */
+  .md-nav {
+    position: fixed;
+    top: 60px; /* Adjust to avoid overlap with the horizontal nav */
+    bottom: 0;
+    width: 250px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .md-nav a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .md-nav a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Customize the header for the top nav bar */
+  .md-header {
+    position: relative;
+    z-index: 10;
+  }
+  

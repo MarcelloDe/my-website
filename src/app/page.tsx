@@ -9,12 +9,16 @@ export default function Home() {
       <div className="space-y-4">
         <Link href="/projects">
           <div className="text-lg text-white bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
+
+
+
             
             My Projects
             </div>
          
         </Link>
-        <Link href="/notes">
+       {/* <Link href="/notes"> */}
+       <Link href = "https://www.marcellod.space/" target="_blank" rel="noopener noreferrer">
           <div className="text-lg text-white bg-green-500 px-4 py-2 rounded hover:bg-green-600">
            
             My Notes
