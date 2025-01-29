@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import './styles/globals.css'; // Import the global CSS file
+import "./styles/globals.css"; // Import the global CSS file
 import Navbar from "./components/Navbar";
 
 export const geistSans = Geist({
@@ -15,7 +15,8 @@ export const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "My Website",
-  description: "A personal website for projects and notes",};
+  description: "A personal website for projects and notes",
+};
 
 export default function RootLayout({
   children,
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <Navbar />
         {children}
