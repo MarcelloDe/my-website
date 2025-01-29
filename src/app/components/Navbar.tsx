@@ -12,18 +12,23 @@ const Navbar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll("div[id]");
+    const NAV_HEIGHT = 80;
 
     const options = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.6, // Trigger when 60% of the section is in view
+      // we're going to use the nav height to scroll a little higher than the actual location because of the padding and top nav height
+      rootMargin: `-${NAV_HEIGHT}px 0px 0px 0px`,
+      threshold: 0.9, // Trigger when 90% of the section is in view
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
-          // we're also going to scroll the page a little higher than the actual location because of the padding and top nav height
+          window.scrollTo({
+            top: entry.boundingClientRect.top + window.scrollY - NAV_HEIGHT,
+            behavior: "smooth",
+          });
         }
       });
     }, options);
@@ -46,8 +51,8 @@ const Navbar = () => {
         <div className="flex space-x-4">
           {[
             { id: "about", label: "About Me" },
-            { id: "projects", label: "Projects" },
             { id: "experience", label: "Experience" },
+            { id: "projects", label: "Projects" },
             { id: "education", label: "Education" },
             { id: "notes", label: "Notes" },
           ].map(({ id, label }) => (
@@ -68,6 +73,8 @@ const Navbar = () => {
     </header>
   );
 };
+
+export default Navbar;
 
 // export default Navbar;
 
@@ -141,8 +148,6 @@ const Navbar = () => {
 //     </header>
 //   );
 // };
-
-export default Navbar;
 
 // import Link from "next/link";
 
