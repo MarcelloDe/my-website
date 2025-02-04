@@ -18,7 +18,7 @@ const Navbar = () => {
       root: null,
       // we're going to use the nav height to scroll a little higher than the actual location because of the padding and top nav height
       rootMargin: `-${NAV_HEIGHT}px 0px 0px 0px`,
-      threshold: 0.9, // Trigger when 90% of the section is in view
+      threshold: 0.5, // Trigger when 90% of the section is in view
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -45,7 +45,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-10 bg-white shadow-md">
+    <header className="fixed top-0 left-0 w-full z-10 bg-white shadow-md">
       <nav className="flex items-center justify-between p-4">
         <div className="text-xl font-bold">Marcello De Filippis</div>
         <div className="flex space-x-4">
