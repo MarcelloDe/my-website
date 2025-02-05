@@ -48,7 +48,7 @@ export default function Home() {
                   src="/profile.jpg"
                   alt="Marcello De Filippis"
                   width={170} // Set appropriate dimensions
-                  height={50}
+                  height={30}
                   className="rounded-full"
                 />
               </div>
