@@ -66,8 +66,8 @@ export default function Home() {
                 certificate in Data Science.
               </p>
             </div>
+            <ConfettiButton />
           </div>
-          <ConfettiButton />
 
           {/* Experience Section */}
           <div id="experience" className="text-center mt-8">
