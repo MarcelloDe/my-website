@@ -1,10 +1,17 @@
-"use client"; // Required for Next.js event handling
+"use client";
+import { useEffect, useState } from "react";
 
-import confetti from "canvas-confetti";
+export default function ConfettiButton() {
+  const [confetti, setConfetti] = useState<any>(null);
 
-const ConfettiButton = () => {
+  useEffect(() => {
+    import("canvas-confetti").then((mod) => setConfetti(() => mod.default));
+  }, []);
+
   const handleClick = () => {
-    confetti({ particleCount: 100, spread: 70 });
+    if (confetti) {
+      confetti({ particleCount: 100, spread: 70 });
+    }
   };
 
   return (
@@ -15,6 +22,4 @@ const ConfettiButton = () => {
       Nice to meet you! 🎉
     </button>
   );
-};
-
-export default ConfettiButton;
+}
