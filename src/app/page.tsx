@@ -54,7 +54,7 @@ export default function Home() {
                   className="rounded-full"
                 />
               </div>
-              <ConfettiButton />
+
               <p className="text-lg text-gray-700 max-w-md">
                 Hi, I&apos;m Marcello, I am a Junior Software Developer student
                 with experience in front-end and back-end development, including
@@ -67,6 +67,7 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <ConfettiButton />
 
           {/* Experience Section */}
           <div id="experience" className="text-center mt-8">
