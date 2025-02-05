@@ -2,7 +2,9 @@
 import { useEffect, useState } from "react";
 
 export default function ConfettiButton() {
-  const [confetti, setConfetti] = useState<any>(null);
+  const [confetti, setConfetti] = useState<
+    ((options: { particleCount: number; spread: number }) => void) | null
+  >(null);
 
   useEffect(() => {
     import("canvas-confetti").then((mod) => setConfetti(() => mod.default));
