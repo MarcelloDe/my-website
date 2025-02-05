@@ -373,7 +373,7 @@ export default function Home() {
               on the topic of software development, data science, and more.
             </p>
             <Link
-              href="https://www.marcellod.space/"
+              href="https://marcellode.github.io/mkdocs/"
               target="_blank"
               rel="noopener noreferrer"
             >
