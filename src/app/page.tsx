@@ -9,6 +9,7 @@ import CardActionArea from "@mui/material/CardActionArea";
 import Box from "@mui/material/Box";
 // import "site/assets/images/loblaw.jpg";
 import Image from "next/image";
+import ConfettiButton from "./components/ConfettiButton";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
 
           <div id="about" className="text-center mt-8">
             <h2 className="text-2xl font-bold text-blue-600 mb-4">About Me</h2>
+
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               {/* Placeholder for Profile Image */}
               <div className="w-30 h-30 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">
@@ -52,6 +54,7 @@ export default function Home() {
                   className="rounded-full"
                 />
               </div>
+              <ConfettiButton />
               <p className="text-lg text-gray-700 max-w-md">
                 Hi, I&apos;m Marcello, I am a Junior Software Developer student
                 with experience in front-end and back-end development, including
