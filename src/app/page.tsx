@@ -43,12 +43,12 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-blue-600 mb-4">About Me</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               {/* Placeholder for Profile Image */}
-              <div className="w-40 h-40 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">
+              <div className="w-30 h-30 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">
                 <Image
                   src="/profile.jpg"
                   alt="Marcello De Filippis"
-                  width={170} // Set appropriate dimensions
-                  height={30}
+                  width={130} // Set appropriate dimensions
+                  height={40}
                   className="rounded-full"
                 />
               </div>
@@ -369,9 +369,45 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-blue-600 mb-4">Notes</h2>
             {/* <p className="text-lg text-gray-700"></p> */}
             <p>
-              Click the link below to be taken to where I keep all of my notes
-              on the topic of software development, data science, and more.
+              Click the link below to be taken to where I keep all of my notes.
+              Topics include:{" "}
             </p>
+
+            <ul className="list-disc pl-5 mt-2 text-left">
+              <strong>
+                {" "}
+                <li>Software Development</li>
+              </strong>
+              {/* sub indented list below */}
+              <ul className="list-disc pl-5 mt-2 text-left">
+                <li>Java</li>
+                <li>.NET</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+              </ul>
+              <strong>
+                <li>Data Science</li>
+              </strong>
+              <ul className="list-disc pl-5 mt-2 text-left">
+                <li>Statistics</li>
+                <li>Machine Learning</li>
+                <li>Big Data Tools</li>
+                <li>Business Problem Analysis</li>
+              </ul>
+              <strong>
+                {" "}
+                <li>Book Summaries</li>{" "}
+              </strong>
+              <ul className="list-disc pl-5 mt-2 text-left">
+                <li>Atomic Habits</li>
+                <li>Deep Work</li>
+                <li>How to Win Friends and Influence People</li>
+                <li>Thinking, Fast and Slow</li>
+              </ul>
+            </ul>
+
+            <br />
             <Link
               href="https://marcellode.github.io/mkdocs/"
               target="_blank"
