@@ -56,14 +56,14 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-700 max-w-md">
-                Hi, I&apos;m Marcello, I am a Junior Software Developer student
-                with experience in front-end and back-end development, including
-                Java, .NET, JavaScript, PHP, and SQL. Previously, I worked as a
-                Data Analyst at Geotab, Loblaw, the Ontario Ministry of
-                Agriculture, and McMaster University, where I developed
-                dashboards, automated processes, and analyzed large datasets. I
-                also hold a degree in Human Rights and a postgraduate
-                certificate in Data Science.
+                Hi, I&apos;m Marcello, I am a Junior Software Developer living
+                Hamilton, Ontario, Canada, with experience in front-end and
+                back-end development, including Java, .NET, JavaScript, PHP, and
+                SQL. Previously, I worked as a Data Analyst at Geotab, Loblaw,
+                the Ontario Ministry of Agriculture, and McMaster University,
+                where I developed dashboards, automated processes, and analyzed
+                large datasets. I also hold a degree in Human Rights and a
+                postgraduate certificate in Data Science.
               </p>
             </div>
             <ConfettiButton />
@@ -214,97 +214,121 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-blue-600 mb-4">Projects</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
-              <Card className="p-4">
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    // image="./site/assets/images/loblaw.jpg"
-                    // image={loblaw}
-                    src="./hamilton.jpg"
-                    alt="Data Science Capstone"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      City of Hamilton Data Analysis
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Data Science Capstone Project
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <Link
+                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="p-4">
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      // image="./site/assets/images/loblaw.jpg"
+                      // image={loblaw}
+                      src="./hamilton.jpg"
+                      alt="Data Science Capstone"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        City of Hamilton Data Analysis
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        Data Science Capstone Project
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Link>
 
-              <Card className="p-4">
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="./map.jpg"
-                    alt="IBM Data Visualization Capstone"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      IBM Data Visualization Capstone
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      IBM Data Visualization Capstone
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <Link
+                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="p-4">
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="./map.jpg"
+                      alt="IBM Data Visualization Capstone"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        IBM Data Visualization Capstone
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        IBM Data Visualization Capstone
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
-              <Card className="p-4">
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image=" ./loblaw.jpg"
-                    alt="Loblaw Logo"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      My Experience at Loblaw
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Co-Op Data Analyst
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <Link
+                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="p-4">
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image=" ./loblaw.jpg"
+                      alt="Loblaw Logo"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        My Experience at Loblaw
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        Co-Op Data Analyst
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Link>
 
-              <Card className="p-4">
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="./slot.jpg"
-                    alt="slot machine"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Slot Machine game made with Java{" "}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Slot Machine game made with Java
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <Link
+                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="p-4">
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="1"
+                      image="./slot.jpg"
+                      alt="slot machine"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Slot Machine game made with Java{" "}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        sx={{ color: "text.secondary" }}
+                      >
+                        Slot Machine game made with Java
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Link>
             </div>
           </div>
 
