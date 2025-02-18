@@ -79,9 +79,7 @@ export default function Home() {
             <div className="space-y-12">
               {/* Project Analyst */}
               <div>
-                <h3 className="text-xl font-semibold">
-                  Project Analyst (Internship)
-                </h3>
+                <h3 className="text-xl font-semibold">Project Analyst</h3>
                 <p className="text-gray-600">
                   Jan 2024 – August 2024 | Geotab | Oakville, ON
                 </p>
@@ -108,7 +106,7 @@ export default function Home() {
               {/* Business & Customer Insights Analyst */}
               <div>
                 <h3 className="text-xl font-semibold">
-                  Business & Customer Insights Analyst (Co-op)
+                  Business & Customer Insights Analyst
                 </h3>
                 <p className="text-gray-600">
                   Jan 2023 – Aug 2023 | Loblaw Companies Limited | Brampton, ON
@@ -134,9 +132,7 @@ export default function Home() {
 
               {/* Data Analyst */}
               <div>
-                <h3 className="text-xl font-semibold">
-                  Data Analyst (Internship)
-                </h3>
+                <h3 className="text-xl font-semibold">Data Analyst</h3>
                 <p className="text-gray-600">
                   May 2022 – Aug 2022 | Ontario Ministry of Agriculture, Food
                   and Rural Affairs | Guelph, ON
@@ -430,10 +426,10 @@ export default function Home() {
                 <li>Book Summaries</li>{" "}
               </strong>
               <ul className="list-disc pl-5 mt-2 text-left">
-                <li>Atomic Habits</li>
-                <li>Deep Work</li>
-                <li>How to Win Friends and Influence People</li>
-                <li>Thinking, Fast and Slow</li>
+                <li>Confident Data Skills</li>
+                <li>201 Knockout Answers To Tough Interview Questions</li>
+                <li>12 Rules Of Life</li>
+                <li>The First 20 Hours</li>
               </ul>
             </ul>
 
