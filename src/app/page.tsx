@@ -56,15 +56,17 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-700 max-w-md">
-                Hi, I&apos;m Marcello, I am a Junior Software Developer living
-                Hamilton, Ontario, Canada, with experience in front-end and
-                back-end development, including Java, .NET, JavaScript, PHP, and
-                SQL. Previously, I worked as a Data Analyst at Geotab, Loblaw,
-                the Ontario Ministry of Agriculture, and McMaster University,
-                where I developed dashboards, automated processes, and analyzed
-                large datasets. I also hold a degree in Human Rights and a
-                postgraduate certificate in Data Science.
+                Hi, I&apos;m Marcello, I am a Software Developer living
+                Hamilton, Ontario, Canada. I have experience in front-end and
+                back-end development, including Javascript, .NET, Java, PHP, and
+                SQL. Previously, I worked as a Data Analyst at organizations
+                such as Geotab, Loblaw, the Ontario Ministry of Agriculture, and
+                McMaster University, where I developed dashboards, automated
+                processes, and analyzed large datasets. I hold a post-graduate
+                Certificate in Data Science, degree in Human Rights, and a
+                Certificate in Human Resource Management.{" "}
               </p>
+              <br />
             </div>
             <ConfettiButton />
           </div>
