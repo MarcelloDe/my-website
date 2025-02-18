@@ -56,7 +56,7 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-700 max-w-md">
-                Hi, I&apos;m Marcello, I am a Software Developer living
+                Hi, I&apos;m Marcello, I am a Software Developer living in
                 Hamilton, Ontario, Canada. I have experience in front-end and
                 back-end development, including Javascript, .NET, Java, PHP, and
                 SQL. Previously, I worked as a Data Analyst at organizations
