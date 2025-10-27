@@ -2,26 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://127.0.0.1:8000/</loc>
-         <lastmod>2025-01-25</lastmod>
-    </url>
-    <url>
-         <loc>http://127.0.0.1:8000/1/</loc>
-         <lastmod>2025-01-25</lastmod>
-    </url>
-    <url>
-         <loc>http://127.0.0.1:8000/about/</loc>
-         <lastmod>2025-01-25</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/projects/</loc>
-         <lastmod>2025-01-25</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/notes/introduction/</loc>
-         <lastmod>2025-01-25</lastmod>
+         <loc>http://127.0.0.1:8000/Book%20Summaries/kaufman/</loc>
+         <lastmod>2025-10-27</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/Subjects/sql/</loc>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/projects/project1/</loc>
-         <lastmod>2025-01-25</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
 </urlset>
