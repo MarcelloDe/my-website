@@ -45,13 +45,14 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
               {/* Profile Image */}
-              <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg">
+              <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <Image
                   src="/profile.jpg"
                   alt="Marcello De Filippis"
-                  width={130}
-                  height={130}
-                  className="rounded-full object-cover"
+                  width={160}
+                  height={160}
+                  className="rounded-full object-cover object-center"
+                  style={{ objectPosition: 'center 20%' }}
                   priority
                 />
               </div>
@@ -218,17 +219,16 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Card className="p-4">
-                  <CardActionArea>
+                <Card className="p-4 h-full flex flex-col">
+                  <CardActionArea className="flex flex-col h-full">
                     <CardMedia
                       component="img"
                       height="140"
-                      // image="./site/assets/images/loblaw.jpg"
-                      // image={loblaw}
                       src="./hamilton.jpg"
                       alt="Data Science Capstone"
+                      sx={{ objectFit: 'cover' }}
                     />
-                    <CardContent>
+                    <CardContent className="flex-1">
                       <Typography gutterBottom variant="h5" component="div">
                         City of Hamilton Data Analysis
                       </Typography>
@@ -248,15 +248,16 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Card className="p-4">
-                  <CardActionArea>
+                <Card className="p-4 h-full flex flex-col">
+                  <CardActionArea className="flex flex-col h-full">
                     <CardMedia
                       component="img"
                       height="140"
                       image="./map.jpg"
                       alt="IBM Data Visualization Capstone"
+                      sx={{ objectFit: 'cover' }}
                     />
-                    <CardContent>
+                    <CardContent className="flex-1">
                       <Typography gutterBottom variant="h5" component="div">
                         IBM Data Visualization Capstone
                       </Typography>
@@ -278,15 +279,16 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Card className="p-4">
-                  <CardActionArea>
+                <Card className="p-4 h-full flex flex-col">
+                  <CardActionArea className="flex flex-col h-full">
                     <CardMedia
                       component="img"
                       height="140"
                       image=" ./loblaw.jpg"
                       alt="Loblaw Logo"
+                      sx={{ objectFit: 'cover' }}
                     />
-                    <CardContent>
+                    <CardContent className="flex-1">
                       <Typography gutterBottom variant="h5" component="div">
                         My Experience at Loblaw
                       </Typography>
@@ -306,15 +308,16 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Card className="p-4">
-                  <CardActionArea>
+                <Card className="p-4 h-full flex flex-col">
+                  <CardActionArea className="flex flex-col h-full">
                     <CardMedia
                       component="img"
-                      height="1"
+                      height="140"
                       image="./slot.jpg"
                       alt="slot machine"
+                      sx={{ objectFit: 'cover' }}
                     />
-                    <CardContent>
+                    <CardContent className="flex-1">
                       <Typography gutterBottom variant="h5" component="div">
                         Slot Machine game made with Java{" "}
                       </Typography>
