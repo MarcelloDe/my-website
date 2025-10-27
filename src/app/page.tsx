@@ -47,7 +47,7 @@ export default function Home() {
               {/* Profile Image */}
               <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.jpeg"
                   alt="Marcello De Filippis"
                   width={130}
                   height={130}
