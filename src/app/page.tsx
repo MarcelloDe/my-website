@@ -215,7 +215,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/Data Science Capstone Project.md"
+                href="https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -244,7 +244,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/Data Science Capstone Project.md"
+                href="https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -275,7 +275,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/IBM Data Science Certification Capstone Project.md"
+                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
