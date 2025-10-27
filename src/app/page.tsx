@@ -44,18 +44,19 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-blue-600 mb-4">About Me</h2>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              {/* Placeholder for Profile Image */}
-              <div className="w-30 h-30 bg-gray-300 rounded-full flex items-center justify-center text-gray-700">
+              {/* Profile Image */}
+              <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-lg">
                 <Image
                   src="/profile.jpg"
                   alt="Marcello De Filippis"
-                  width={130} // Set appropriate dimensions
-                  height={40}
-                  className="rounded-full"
+                  width={130}
+                  height={130}
+                  className="rounded-full object-cover"
+                  priority
                 />
               </div>
 
-              <p className="text-lg text-gray-700 max-w-md">
+              <p className="text-lg text-gray-700 max-w-md leading-relaxed">
                 Hi, I&apos;m Marcello, I am a Software Developer living in
                 Hamilton, Ontario, Canada. I have experience in front-end and
                 back-end development, including Javascript, .NET, Java, PHP, and
@@ -155,15 +156,15 @@ export default function Home() {
               </div>
 
               {/* Head of Supportive Relations */}
-              <div>
-                <h3 className="text-xl font-semibold">
+              <div className="pb-6 border-b border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-800">
                   Head of Supportive Relations
                 </h3>
-                <p className="text-gray-600">
-                  Jun 2021 – Jan 2022 | McMaster University&apos;s ‘Deltahacks’
+                <p className="text-gray-600 text-sm mt-1">
+                  Jun 2021 – Jan 2022 | McMaster University&apos;s &apos;Deltahacks&apos;
                   Hackathon | Hamilton, ON
                 </p>
-                <ul className="list-disc pl-5 mt-2 text-left">
+                <ul className="list-disc pl-5 mt-3 text-left space-y-2 text-gray-700">
                   <li>
                     Led a team of three executives in recruiting mentors,
                     judges, workshop hosts, and challenge hosts for a coding
