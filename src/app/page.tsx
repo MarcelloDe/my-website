@@ -215,7 +215,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                href="https://marcellode.github.io/mkdocs/projects/Data Science Capstone Project.md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
