@@ -215,7 +215,8 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
               <Link
-                //href="https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.html"
+              // the below href is the url for the card that says "City of Hamilton Data Analysis"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -242,6 +243,7 @@ export default function Home() {
                   </CardActionArea>
                 </Card>
               </Link>
+              
 
               <Link
                 href="https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.html"
@@ -275,7 +277,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.md"
+                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -304,7 +306,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="https://marcellode.github.io/mkdocs/projects/project1/"
+                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
