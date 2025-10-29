@@ -11,6 +11,45 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import ConfettiButton from "./components/ConfettiButton";
 
+// Projects data structure
+//this is an array of objects that we are mapping over
+//mapping means we are going to loop through the array and create a new element for each object in the array
+
+const projects = [
+  {
+    id: 1,
+    title: "City of Hamilton Data Analysis",
+    description: "Data Science Capstone Project",
+    image: "./hamilton.jpg",
+    alt: "Data Science Capstone",
+    href: "https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.html"
+  },
+  {
+    id: 2,
+    title: "IBM Data Visualization Capstone",
+    description: "IBM Data Visualization Capstone",
+    image: "./map.jpg",
+    alt: "IBM Data Visualization Capstone",
+    href: "https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.html"
+  },
+  {
+    id: 3,
+    title: "My Experience at Loblaw",
+    description: "Co-Op Data Analyst",
+    image: "./loblaw.jpg",
+    alt: "Loblaw Logo",
+    href: "https://marcellode.github.io/mkdocs/projects/Loblaw.html"
+  },
+  {
+    id: 4,
+    title: "SQL Intro",
+    description: "SQL Video Explanation and Examples",
+    image: "./sqlphoto.jpg",
+    alt: "sql",
+    href: "https://marcellode.github.io/mkdocs/Subjects/Sql%20Intro.html"
+  }
+];
+
 export default function Home() {
   return (
     <>
@@ -209,130 +248,41 @@ export default function Home() {
           </div>
 
           {/* Projects Section */}
-
           <div id="projects" className="text-center mt-8">
             <h2 className="text-2xl font-bold text-blue-600 mb-4">Projects</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
-              <Link
-              // the below href is the url for the card that says "City of Hamilton Data Analysis"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Card className="p-4 h-full flex flex-col">
-                  <CardActionArea className="flex flex-col h-full">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      src="./hamilton.jpg"
-                      alt="Data Science Capstone"
-                      sx={{ objectFit: 'cover' }}
-                    />
-                    <CardContent className="flex-1">
-                      <Typography gutterBottom variant="h5" component="div">
-                        City of Hamilton Data Analysis
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary" }}
-                      >
-                        Data Science Capstone Project
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Link>
-              
-
-              <Link
-                href="https://marcellode.github.io/mkdocs/projects/Data%20Science%20Capstone%20Project.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Card className="p-4 h-full flex flex-col">
-                  <CardActionArea className="flex flex-col h-full">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="./map.jpg"
-                      alt="IBM Data Visualization Capstone"
-                      sx={{ objectFit: 'cover' }}
-                    />
-                    <CardContent className="flex-1">
-                      <Typography gutterBottom variant="h5" component="div">
-                        IBM Data Visualization Capstone
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary" }}
-                      >
-                        IBM Data Visualization Capstone
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mb-8">
-              <Link
-                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Card className="p-4 h-full flex flex-col">
-                  <CardActionArea className="flex flex-col h-full">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image=" ./loblaw.jpg"
-                      alt="Loblaw Logo"
-                      sx={{ objectFit: 'cover' }}
-                    />
-                    <CardContent className="flex-1">
-                      <Typography gutterBottom variant="h5" component="div">
-                        My Experience at Loblaw
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary" }}
-                      >
-                        Co-Op Data Analyst
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Link>
-
-              <Link
-                href="https://marcellode.github.io/mkdocs/projects/IBM%20Data%20Science%20Certification%20Capstone%20Project.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Card className="p-4 h-full flex flex-col">
-                  <CardActionArea className="flex flex-col h-full">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="./slot.jpg"
-                      alt="slot machine"
-                      sx={{ objectFit: 'cover' }}
-                    />
-                    <CardContent className="flex-1">
-                      <Typography gutterBottom variant="h5" component="div">
-                        Slot Machine game made with Java{" "}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: "text.secondary" }}
-                      >
-                        Slot Machine game made with Java
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Link>
+              {projects.map((project) => (
+                <Link
+                  key={project.id}
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card className="p-4 h-full flex flex-col">
+                    <CardActionArea className="flex flex-col h-full">
+                      <CardMedia
+                        component="img"
+                        height="140"
+                        image={project.image}
+                        alt={project.alt}
+                        sx={{ objectFit: 'cover' }}
+                      />
+                      <CardContent className="flex-1">
+                        <Typography gutterBottom variant="h5" component="div">
+                          {project.title}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{ color: "text.secondary" }}
+                        >
+                          {project.description}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
+              ))}
             </div>
           </div>
 
