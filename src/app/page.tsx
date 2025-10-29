@@ -35,7 +35,7 @@ const projects = [
   {
     id: 3,
     title: "My Experience at Loblaw",
-    description: "Co-Op Data Analyst",
+    description: "Co-Op Data Analyst / Data Engineering",
     image: "./loblaw.jpg",
     alt: "Loblaw Logo",
     href: "https://marcellode.github.io/mkdocs/projects/Loblaw.html"
@@ -75,14 +75,14 @@ export default function Home() {
       </header> */}
 
       {/* Main Content */}
-      <Container maxWidth="md">
+      <Container maxWidth="lg" disableGutters>
         <Box sx={{ mt: 10 }} className="flex flex-col items-center">
           {/* About Me Section */}
 
           <div id="about" className="text-center mt-8">
             <h2 className="text-2xl font-bold text-blue-600 mb-4">About Me</h2>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col md:flex-row items-center md:items-center md:justify-start justify-center gap-6">
               {/* Profile Image */}
               <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <Image
@@ -96,20 +96,28 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-lg text-gray-700 max-w-md leading-relaxed">
-                Hi, I&apos;m Marcello, I am a Software Developer living in
-                Hamilton, Ontario, Canada. I have experience in front-end and
-                back-end development, including Javascript, .NET, Java, PHP, and
-                SQL. Previously, I worked as a Data Analyst at organizations
-                such as Geotab, Loblaw, the Ontario Ministry of Agriculture, and
-                McMaster University, where I developed dashboards, automated
-                processes, and analyzed large datasets. I hold a post-graduate
-                Certificate in Data Science, degree in Human Rights, and a
-                Certificate in Human Resource Management.{" "}
+              <p className="text-lg text-gray-700 max-w-3xl md:max-w-4xl leading-relaxed text-left">
+                Hi, I&apos;m Marcello, a Data Analyst and Software Developer who
+                bridges the gap between technical execution and organizational
+                strategy. While many analysts focus solely on interpreting data, I
+                take it a step further by building the automated pipelines, data
+                products, and applications that generate those insights in the first
+                place. My technical expertise spans System Analysis and Design, SQL,
+                Data Integrity, and Project Management, demonstrated through work at
+                organizations like Geotab, Loblaw, and the Ontario Ministry of
+                Agriculture. What sets me apart is my unique foundation in Human
+                Rights, HR, and Business. This background enables me to understand
+                stakeholder needs and organizational context, ensuring the technology I
+                build solves genuine business problems. Having worked extensively in
+                public and government sectors, I&apos;m particularly skilled at
+                navigating compliance requirements and structured governance
+                frameworks, making me a strong fit for Data Engineering, Solutions
+                Consulting, and Technical Product Management roles.{" "}
               </p>
-              <br />
             </div>
-            <ConfettiButton />
+            <div className="mt-6">
+              <ConfettiButton />
+            </div>
           </div>
 
           {/* Experience Section */}
@@ -118,85 +126,97 @@ export default function Home() {
               Experience
             </h2>
             <div className="space-y-12">
-              {/* Project Analyst */}
+              {/* Front-End Developer Intern */}
               <div>
-                <h3 className="text-xl font-semibold">Project Analyst</h3>
-                <p className="text-gray-600">
-                  Jan 2024 – August 2024 | Geotab | Oakville, ON
-                </p>
+                <h3 className="text-xl font-semibold">Front-End Developer Intern</h3>
+                <p className="text-gray-600">Jan 2025 – Sept 2025 | Parva | Hamilton, ON</p>
                 <ul className="list-disc pl-5 mt-2 text-left">
                   <li>
-                    Collaborated on a software migration project for 6,000+
-                    devices, developing processes, maintaining spreadsheets,
-                    coordinating with partners, and using Jira for ticket
-                    management.
+                    Gained hands-on experience building a CRM web application with React and Next.js,
+                    focusing on responsive design and performance optimization.
                   </li>
                   <li>
-                    Created a swim lane process map in Miro to streamline
-                    workflows across departments, improving task efficiency.
+                    Contributed to a drag-and-drop form builder with real-time previews and reusable
+                    components that can be embedded into external websites.
                   </li>
                   <li>
-                    Analyzed missed revenue and identified a delinquent client,
-                    raising the urgency of a billing system improvement
-                    initiative to close the loophole and ensure accurate revenue
-                    capture.
+                    Applied state management tools (Zustand, React Query) to support features like
+                    multi-brand switching.
+                  </li>
+                  <li>
+                    Collaborated with team members to improve code quality and workflow using TypeScript,
+                    Jest, ESLint, Prettier, and Git in a professional development environment.
                   </li>
                 </ul>
               </div>
 
-              {/* Business & Customer Insights Analyst */}
+              {/* Project Analyst Intern */}
               <div>
-                <h3 className="text-xl font-semibold">
-                  Business & Customer Insights Analyst
-                </h3>
-                <p className="text-gray-600">
-                  Jan 2023 – Aug 2023 | Loblaw Companies Limited | Brampton, ON
-                </p>
+                <h3 className="text-xl font-semibold">Project Analyst Intern</h3>
+                <p className="text-gray-600">Jan 2024 – Aug 2024 | Geotab | Oakville, ON</p>
                 <ul className="list-disc pl-5 mt-2 text-left">
                   <li>
-                    Assisted with building and maintaining a data warehouse
-                    using Google Cloud Platform, conducting data profiling and
-                    source-to-target mapping analyses.
+                    Collaborated on an initiative to migrate software for 6,000+ devices by developing
+                    processes, maintaining detailed spreadsheets, coordinating with external partners,
+                    and using Jira to log and resolve tickets.
                   </li>
                   <li>
-                    Collaborated with cross-functional teams in an Agile
-                    environment, participating in sprints and using Jira for
-                    task management.
+                    Created a swim lane process map in Miro to clearly outline workflows, helping the team
+                    better understand tasks and work more efficiently across different departments.
                   </li>
                   <li>
-                    Documented landing, ingestion, curation, and publication
-                    logic in Confluence, ensuring clear guidelines for data
-                    engineers.
+                    Conducted an analysis of missed revenue, identifying a delinquent client exploiting a
+                    loophole. Elevated the issue to solidify the billing system, ensuring accurate revenue
+                    capture and closing the identified loophole.
                   </li>
                 </ul>
               </div>
 
-              {/* Data Analyst */}
+              {/* Business & Customer Insights Analyst Co-Op */}
               <div>
-                <h3 className="text-xl font-semibold">Data Analyst</h3>
-                <p className="text-gray-600">
-                  May 2022 – Aug 2022 | Ontario Ministry of Agriculture, Food
-                  and Rural Affairs | Guelph, ON
-                </p>
+                <h3 className="text-xl font-semibold">Business & Customer Insights Analyst Co-Op</h3>
+                <p className="text-gray-600">Jan 2023 – Aug 2023 | Loblaw Companies Limited | Brampton, ON</p>
                 <ul className="list-disc pl-5 mt-2 text-left">
                   <li>
-                    Supported the Meat Plant Audit Program by developing
-                    data-driven tools to optimize inspection schedules based on
-                    risk levels and compliance history.
+                    Collaborated with cross-functional teams in an Agile environment, using Jira for task
+                    management, sprint planning, and progress tracking. Participated in daily stand-ups and
+                    sprint reviews to meet project goals.
                   </li>
                   <li>
-                    Created VBA Macros in Excel to automate manual processes,
-                    improving efficiency in handling large datasets.
+                    Supported data warehousing initiatives using Google Cloud Platform as an analyst on the
+                    data engineering team, conducting data profiling and source-to-target mapping analyses
+                    to help build data pipelines.
                   </li>
                   <li>
-                    Developed a swim-lane process map to identify inefficiencies
-                    and documented strategies for process optimization.
+                    Utilized Google BigQuery for data warehousing and data profiling, performing SQL queries
+                    to ensure data accuracy and integrity as part of the data engineering process.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Data Analyst Intern */}
+              <div>
+                <h3 className="text-xl font-semibold">Data Analyst Intern</h3>
+                <p className="text-gray-600">May 2022 – Aug 2022 | Ontario Ministry of Agriculture, Food and Rural Affairs | Guelph, ON</p>
+                <ul className="list-disc pl-5 mt-2 text-left">
+                  <li>
+                    Supported the Meat Plant Audit Program by using data on plant risk levels, compliance
+                    history, and operational activities to develop data-driven tools to streamline inspection
+                    schedules for slaughter plants.
+                  </li>
+                  <li>
+                    Produced VBA Macros within Microsoft Excel to automate recurring processes within a
+                    spreadsheet with over a thousand records, reducing time spent on manual tasks.
+                  </li>
+                  <li>
+                    Formulated a swim-lane process map to identify inefficiencies, and documented and
+                    optimized strategies.
                   </li>
                 </ul>
               </div>
 
               {/* Head of Supportive Relations */}
-              <div className="pb-6 border-b border-gray-200">
+              <div className="pb-6">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Head of Supportive Relations
                 </h3>
@@ -225,22 +245,20 @@ export default function Home() {
               {/* Data Analyst */}
               <div>
                 <h3 className="text-xl font-semibold">Data Analyst</h3>
-                <p className="text-gray-600">
-                  Nov 2020 – Aug 2021 | McMaster University | Hamilton, ON
-                </p>
+                <p className="text-gray-600">Nov 2020 – Aug 2021 | McMaster University | Hamilton, ON</p>
                 <ul className="list-disc pl-5 mt-2 text-left">
                   <li>
-                    Analyzed 6 years of course evaluation data for 12
-                    departments, creating dashboards that provided insights
-                    across multiple teams.
+                    Analyzed course evaluation trends among 12 departments over a 6-year span using Excel
+                    and created accompanying dashboards for each report to be accessed by multiple teams
+                    across departments.
                   </li>
                   <li>
-                    Cleaned and compiled data to build an interactive dashboard,
-                    ensuring data integrity and normalization.
+                    Cleaned and compiled data from a database to create an interactive and visualized
+                    dashboard while ensuring data integrity and normalization.
                   </li>
                   <li>
-                    Utilized weighted averages for more accurate insights from
-                    historical course evaluation data with varying scales.
+                    Utilized weighted averages in analyzing historical course evaluation results that used
+                    varying scales, enabling more accurate insights and comparisons.
                   </li>
                 </ul>
               </div>
