@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* Main Content */}
       <Container maxWidth="lg" disableGutters>
-        <Box sx={{ mt: 10 }} className="flex flex-col items-center">
+        <Box sx={{ mt: 10 }} className="flex flex-col items-center px-4 sm:px-6 md:px-0">
           {/* About Me Section */}
 
           <div id="about" className="text-center mt-8">
@@ -96,8 +96,8 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-lg text-gray-700 max-w-3xl md:max-w-4xl leading-relaxed text-left">
-                Hi, I&apos;m Marcello, a Data Analyst and Software Developer who
+              <p className="text-lg text-gray-700 max-w-3xl md:max-w-4xl leading-relaxed text-left px-4 sm:px-6 md:px-0">
+                Hi, I&apos;m Marcello, a Data Analyst and Software Developer living in Hamilton, Ontario, Canada who
                 bridges the gap between technical execution and organizational
                 strategy. While many analysts focus solely on interpreting data, I
                 take it a step further by building the automated pipelines, data
