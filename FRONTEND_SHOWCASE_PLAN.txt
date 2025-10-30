@@ -1,0 +1,75 @@
+Plan to showcase front-end skills on the website
+
+Visual polish and UX
+- Design system and tokens: set up color/spacing/typography tokens via CSS variables; unify Tailwind/MUI or pick one.
+- Dark mode + theme switcher: system-preference detection, smooth transitions, persisted setting.
+- Layout improvements: responsive grid, better whitespace rhythm, consistent section spacing, sticky nav with active section highlighting.
+- Micro-interactions: hover states, tap feedback, animated cards, subtle parallax, section reveal on scroll (Framer Motion).
+- Image handling: next/image everywhere with placeholders, aspect-ratio locks, art direction (mobile crops), priority above the fold.
+- Case-study templates: hero, problem/solution/result, tech badges, code snippets, before/after images, embedded demos.
+
+Components to build (show breadth)
+- Accessible components: Tabs, Accordion, Modal/Drawer, Tooltip, Toast, Command Palette (Cmd+K).
+- Complex form: React Hook Form + Zod, multi-step, autosave, file upload with previews, progress, optimistic submit.
+- Data grid: virtualized list/table (TanStack Table + react-virtual), column sort/filter, pinned rows, CSV export.
+- Drag-and-drop: Kanban board or form builder (live demo with shareable state).
+- Charts: responsive dashboard (Recharts/VisX/ECharts), sync tooltips, theming, export to PNG.
+- Media/lightbox: gallery with keyboard nav and pinch-zoom.
+- MDX content system: MDX for projects/notes with custom components (Callout, CodeBlock with copy button).
+
+Performance excellence
+- Lighthouse 95+ targets (mobile): LCP < 2.5s, CLS < 0.1, TBT < 200ms.
+- Bundle strategy: dynamic imports, route-level code splitting, next/script strategies, remove unused MUI or Tailwind if both used.
+- Data fetching: React Server Components where possible, edge-cached fetches, SWR/React Query for client state, optimistic updates.
+- Image/CDN: next/image with correct sizes, AVIF/WebP, preloading hero image/fonts (next/font).
+- Prefetching: Link prefetch, hover prefetch, router.prefetch for likely routes.
+
+Accessibility (AA+)
+- Semantics: landmarks, heading order, labels, alt text, form errors with aria-live.
+- Keyboard: focus rings, skip links, focus trap in modals/menus, logical tab order.
+- Color contrast: tokens enforced via lint tests; prefers-reduced-motion support.
+
+Content and SEO
+- Project pages: deep dives with metrics (perf GIFs, code snippets, decisions, tradeoffs).
+- Blog/Notes: MDX with tags, search, RSS.
+- Structured data: JSON-LD for Person, Article, Project; Open Graph/Twitter cards per page.
+- Sitemap + robots; canonical URLs; clean metadata per route.
+
+Live interactive demos
+- Host demo mini-apps: form builder, data grid, chart dashboard, DnD Kanban—each with URL-shareable state.
+- "Playground" pages: toggle themes, density, RTL, reduced motion, and see components update live.
+
+Tooling and code quality
+- TypeScript strict mode, ESLint + Prettier, import sorting, path aliases.
+- Unit/integration tests: Vitest/Jest + React Testing Library; visual regression via Storybook + Chromatic or Playwright screenshots.
+- E2E: Playwright CI run for critical flows.
+- Git hooks: Husky + lint-staged + commitlint.
+- Storybook: docs, controls, a11y and interactions tests; deploy to separate subdomain.
+
+Reliability and security
+- Error boundaries + 404/500 pages with friendly UX.
+- Logging/Monitoring: Sentry or LogRocket for client errors, Web Vitals reporting.
+- Contact form: RHF+Zod validation, bot protection (hCaptcha/Turnstile), edge function email via Resend.
+- Security headers + CSP; limit third-party scripts.
+
+PWA and offline (optional but impressive)
+- PWA: manifest, service worker for offline viewing of projects/blog.
+- Offline caches for images/content; "add to home screen" hints.
+
+Delivery and analytics
+- CI/CD: Vercel previews per PR, Lighthouse CI budget, type-check/test gates.
+- Analytics: Plausible/Umami; event tracking (CTA clicks, demo interactions).
+
+Navigation and discoverability
+- Command Palette (projects/pages/actions), fuzzy search (MiniSearch/Fuse) across MDX content.
+- Breadcrumbs on deep pages; related posts/projects.
+
+Visual signatures
+- Custom 404 with playful animation.
+- Subtle 3D/Canvas piece (Three.js/R3F) or tasteful shader background for hero (performance-guarded).
+
+Quick wins to do first
+- Add dark mode toggle; fix spacing rhythm; ensure next/image everywhere with placeholders.
+- Build Command Palette; add animated section reveals; add Open Graph images per project.
+- Create one deep case study with MDX + live demo + metrics.
+- Set up Storybook + deploy; add Lighthouse CI; raise scores to 95+.
